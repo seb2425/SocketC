@@ -6,7 +6,7 @@ will make the connection via net_socket (a socket) . the received data will be s
 #include <stdio.h>
 #include <sys/types.h>
 #include <netinet/in.h>
-
+#include <unistd.h>
 int main(){
     //create a socket
     int net_socket;

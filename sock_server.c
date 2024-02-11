@@ -1,13 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/types.h>
-#include <winsock2.h>
-#include <ws2tcpip.h>
+#include <unistd.h>
 
-//#include <netinet/in.h>
+#include <netinet/in.h>
 
 int main(){
-    char server_data[256]="hello";
+    char server_data[256]="hello world";
     //created socekt
     int sock_server=socket(AF_INET,SOCK_STREAM,0);
 
