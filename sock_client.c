@@ -15,7 +15,7 @@ int main(){
     //specify address for a socket
     struct sockaddr_in server_address;
     server_address.sin_family= AF_INET;
-    server_address.sin_port=htons(8080);
+    server_address.sin_port=htons(3000);
     server_address.sin_addr.s_addr=INADDR_ANY;
 
     //connect to remote server
